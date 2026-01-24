@@ -1,0 +1,9 @@
+CoverageFile,LinesCovered,LinesValid,LineRate,BranchesCovered,BranchesValid,BranchRate
+2a8dd49e-4f69-453a-a39d-9d9f79edecae/coverage.cobertura.xml,18,30,0.6000,0,0,1.0000
+3ff4cbca-b57b-45ae-9c1c-6e3d8a2fa8dc/coverage.cobertura.xml,0,16,0.0000,0,4,0.0000
+600c93e9-c51e-48cb-b2ba-63eaf43b26ad/coverage.cobertura.xml,54,109,0.4954,20,44,0.4545
+65b7af80-84e5-49a1-9a3b-dbf787425045/coverage.cobertura.xml,492,1840,0.2673,178,746,0.2386
+7892f8de-4449-4fe1-8e11-cd33f3effceb/coverage.cobertura.xml,249,303,0.8217,28,48,0.5833
+90565668-8879-4784-bc85-61fca18f098e/coverage.cobertura.xml,48,7145,0.0067,19,2169,0.0087
+941b4a4c-bf34-45d0-9e9e-758326431bd9/coverage.cobertura.xml,6075,7072,0.8590,1607,2141,0.7505
+TOTAL,6936,16515,0.4200,1852,5152,0.3595

@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "src",
+          "files": [
+            "Muonroi.BuildingBlock/Muonroi.BuildingBlock.csproj",
+            "Muonroi.RuleEngine.Abstractions/Muonroi.RuleEngine.Abstractions.csproj",
+            "Muonroi.RuleEngine.Core/Muonroi.RuleEngine.Core.csproj",
+            "Muonroi.RuleEngine.NRules/Muonroi.RuleEngine.NRules.csproj",
+            "Muonroi.RuleEngine.CEP/Muonroi.RuleEngine.CEP.csproj",
+            "Muonroi.Rules/Muonroi.Rules.csproj",
+            "Muonroi.Auth/Muonroi.Auth.csproj",
+            "Muonroi.AuthZ/Muonroi.AuthZ.csproj",
+            "Muonroi.Tenancy/Muonroi.Tenancy.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "index.md",
+          "index.*.md",
+          "toc.yml",
+          "docs/**",
+          "api/**"
+        ],
+        "exclude": [
+          "_site/**",
+          "**/node_modules/**",
+          "docs/postman/**"
+        ]
+      }
+    ],
+    "styles": [
+      "styles/extra.css",
+      "styles/theme.css"
+    ],
+    "scripts": [
+      "styles/theme.js"
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "docs/postman/**",
+          "Samples/**",
+          "public/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default"
+    ],
+    "globalMetadata": {
+      "_appName": "MuonRoiBuildingBlock",
+      "_appTitle": "MuonRoiBuildingBlock",
+      "_enableSearch": true,
+      "pdf": true
+    },
+    "locales": [ "en", "vi" ]
+  }
+}

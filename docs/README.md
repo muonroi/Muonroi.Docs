@@ -1,0 +1,47 @@
+# Muonroi Building Block Documentation
+
+Welcome to the official documentation for Muonroi Building Block. This guide is organized into logical sections to help you find what you need quickly.
+
+## 🚀 Getting Started
+*   [**Introduction**](introduction.md) - Overview of the library's purpose and architecture.
+*   [**Quickstart Guide**](getting-started.md) - How to install and set up your first project.
+*   [**Template Quickstart**](template-quickstart.md) - Using the `dotnet new` template to scaffold a solution.
+*   [**Appsettings Guide**](appsettings-guide.md) - Detailed configuration reference (Database, Token, Logger, etc.).
+
+## 🔐 Authentication & Authorization
+*   [**Auth Module Guide**](auth-module-guide.md) - Configuring JWT, Cookie Auth, and Middleware.
+*   [**Token Guide**](token-guide.md) - Deep dive into Token generation, Refresh Tokens, and Validation.
+*   [**Permission System**](permission-guide.md) - How RBAC and Permissions work (`[AuthorizePermission]`).
+*   [**Permission Tree**](permission-tree-guide.md) - Syncing permissions to the frontend.
+*   [**External Auth**](external-auth-guide.md) - Integrating third-party providers.
+*   [**Multi-Tenant Guide**](multi-tenant-guide.md) - Configuring data isolation and tenant resolution.
+
+## 🛠️ Backend Development
+*   [**Backend Architecture**](backend-guide.md) - Best practices for Controllers, Handlers, and Repositories.
+*   [**Data Layer Guide**](data-layer.md) - Using `MRepository`, `MQuery`, and Unit of Work.
+*   [**Auto-CRUD API**](backend-guide.md#6-auto-crud-api-zero-code) - Generating APIs automatically from Entities.
+*   [**Cache Guide**](cache-guide.md) - Configuring Multi-level Caching (Memory + Redis).
+*   [**Background Jobs**](background-jobs-guide.md) - Setting up Hangfire or Quartz.
+*   [**gRPC Guide**](grpc-guide.md) - Building high-performance RPC services.
+*   [**SignalR Guide**](signalr-guide.md) - Real-time communication setup.
+
+## ⚙️ Rule Engine
+*   [**Rule Engine Guide**](rule-engine-guide.md) - Core concepts: `IRule<T>`, Workflows, and Facts.
+*   [**Rule Governance**](rule-governance-guide.md) - Versioning, signing, and managing rule sets.
+*   [**Rule Rollout**](rule-rollout-guide.md) - Feature flags and gradual rollout strategies.
+*   [**NRules Integration**](nrules-integration.md) - Advanced rule patterns using NRules.
+
+## 🌐 DevOps & Infrastructure
+*   [**Observability**](observability-guide.md) - Logging (Serilog/Elastic), Metrics, and Tracing.
+*   [**Gateway Configuration**](gateway-guide.md) - Setting up API Gateways (Ocelot/YARP).
+*   [**Docker & Kubernetes**](ci-cd-docker-k8s.md) - Containerization and deployment checklists.
+*   [**Secret Management**](secret-management.md) - Handling sensitive configuration securely.
+*   [**ASVS Checklist**](asvs-checklist.md) - Security compliance verification.
+
+## 📦 Samples & UI
+*   [**Base Template Examples**](base-template-examples.md) - Common patterns in the boilerplate.
+*   [**UI Admin Dashboard**](ui-admin-dashboard.md) - Integrating with the frontend admin panel.
+*   [**Frontend Integration**](frontend-integration.md) - connecting Angular/Flutter apps.
+
+---
+*Cannot find what you are looking for? Check the [Database Structure](database-structure.md) or open an issue on GitHub.*

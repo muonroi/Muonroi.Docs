@@ -1,0 +1,141 @@
+### YamlMime:TableOfContent
+- name: Start Here
+  items:
+  - name: Introduction
+    href: introduction.md
+  - name: Getting Started
+    href: getting-started.md
+  - name: Quickstart
+    href: quickstart.md
+  - name: "Quickstart: Multi-Tenant API"
+    href: quickstart-multi-tenant-api.md
+  - name: UI Auth Admin Dashboard
+    href: ui-admin-dashboard.md
+
+- name: Architecture
+  items:
+  - name: Architecture Overview
+    href: architecture-overview.md
+  - name: Architecture Overview (Ti?ng Vi?t)
+    href: architecture-overview.vi.md
+  - name: Tenancy Models
+    href: arch/tenancy-models.md
+  - name: EF Filters
+    href: arch/ef-filters.md
+  - name: Frontend Integration
+    href: frontend-integration.md
+
+- name: Multi-Tenancy
+  items:
+  - name: Multi-Tenant Guide
+    href: multi-tenant-guide.md
+  - name: Multi-Tenant Guide (Ti?ng Vi?t)
+    href: multi-tenant-guide.vi.md
+  - name: Tenant Isolation
+    href: storage/tenant-isolation.md
+
+- name: Security
+  items:
+  - name: Authorization & Permissions
+    href: permission-guide.md
+  - name: Permission Tree Guide
+    href: permission-tree-guide.md
+  - name: External Auth Guide
+    href: external-auth-guide.md
+  - name: Auth/AuthZ/BFF Guide
+    href: auth-module-guide.md
+  - name: Auth/AuthZ/BFF Guide (Ti?ng Vi?t)
+    href: auth-module-guide.vi.md
+  - name: BFF Guide
+    href: security/bff.md
+  - name: MFA Guide
+    href: security/mfa.md
+  - name: OAuth2 & OIDC Guide
+    href: security/oauth2-oidc.md
+  - name: Token Guide
+    href: token-guide.md
+  - name: Token Guide (Ti?ng Vi?t)
+    href: token-guide.vi.md
+  - name: UI Auth Admin Dashboard
+    href: ui-admin-dashboard.md
+
+- name: Integration
+  items:
+  - name: Gateway Configuration
+    href: gateway-guide.md
+  - name: gRPC Guide
+    href: grpc-guide.md
+  - name: SignalR Guide
+    href: signalr-guide.md
+  - name: Dapper Guide
+    href: dapper-guide.md
+  - name: Cache Guide
+    href: cache-guide.md
+  - name: OPA Integration Guide
+    href: opa-integration-guide.md
+
+- name: Rule Engine
+  items:
+  - name: Rule Engine
+    href: rule-engine-guide.md
+  - name: Rule Engine (Ti?ng Vi?t)
+    href: rule-engine-guide.vi.md
+  - name: Rule Governance Guide
+    href: rule-governance-guide.md
+  - name: Rule Rollout Guide
+    href: rule-rollout-guide.md
+  - name: NRules Integration
+    href: nrules-integration.md
+  - name: Workflow JSON Format (Ti?ng Vi?t)
+    href: workflow-json-format.vi.md
+
+- name: Operations
+  items:
+  - name: Background Jobs
+    href: background-jobs-guide.md
+  - name: Observability
+    href: observability-guide.md
+  - name: Secret Management
+    href: secret-management.md
+  - name: CI/CD with Docker & K8s
+    href: ci-cd-docker-k8s.md
+  - name: Canary & Shadow
+    href: ops/canary-shadow.md
+  - name: Tenant DR Playbook
+    href: ops/dr-tenant-playbook.md
+  - name: Azure SQL Elastic Jobs
+    href: ops/elastic-jobs.md
+
+- name: Base Template & Examples
+  items:
+  - name: Base Template
+    href: muonroibase-template.md
+  - name: BaseTemplate Examples
+    href: base-template-examples.md
+
+- name: Guides & Checklists
+  items:
+  - name: Usage Guide
+    href: usage-guide.md
+  - name: Feature Flags
+    href: feature-flags.md
+  - name: Data Access
+    href: data-layer.md
+  - name: Database Structure
+    href: database-structure.md
+  - name: Extensions Reference
+    href: extensions-log.md
+  - name: Interface Services
+    href: interface-guide.md
+  - name: Timing
+    href: timing-guide.md
+  - name: Saga Pattern with Kafka
+    href: saga-kafka.md
+  - name: Test Matrix Guide
+    href: test-matrix-guide.md
+  - name: ASVS Checklist
+    href: asvs-checklist.md
+  - name: Release Checklist
+    href: release-checklist.md
+  - name: Upgrade Guide
+    href: upgrade-guide.md
