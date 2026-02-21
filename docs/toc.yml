@@ -59,6 +59,21 @@
   - name: UI Auth Admin Dashboard
     href: ui-admin-dashboard.md
 
+- name: Enterprise (Private)
+  items:
+  - name: License Capability Model
+    href: enterprise/license-capability-model.md
+  - name: Control Plane MVP
+    href: enterprise/control-plane-mvp.md
+  - name: Enterprise Secure Profile (E2)
+    href: enterprise/enterprise-secure-profile-e2.md
+  - name: Enterprise Centralized Authorization (E3)
+    href: enterprise/enterprise-centralized-authorization-e3.md
+  - name: Enterprise Compliance (E4)
+    href: enterprise/enterprise-compliance-e4.md
+  - name: Enterprise Operations (E5)
+    href: enterprise/enterprise-operations-e5.md
+
 - name: Integration
   items:
   - name: Gateway Configuration

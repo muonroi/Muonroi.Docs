@@ -38,6 +38,14 @@ Welcome to the official documentation for Muonroi Building Block. This guide is 
 *   [**Secret Management**](secret-management.md) - Handling sensitive configuration securely.
 *   [**ASVS Checklist**](asvs-checklist.md) - Security compliance verification.
 
+## 🏢 Enterprise (Private)
+*   [**License Capability Model**](enterprise/license-capability-model.md) - Tier matrix for Free/Paid/Enterprise.
+*   [**Control Plane MVP**](enterprise/control-plane-mvp.md) - Centralized control plane design.
+*   [**Enterprise Secure Profile (E2)**](enterprise/enterprise-secure-profile-e2.md) - Security hardening profile.
+*   [**Enterprise Centralized Authorization (E3)**](enterprise/enterprise-centralized-authorization-e3.md) - Policy decision integration.
+*   [**Enterprise Compliance (E4)**](enterprise/enterprise-compliance-e4.md) - Audit and compliance workflows.
+*   [**Enterprise Operations (E5)**](enterprise/enterprise-operations-e5.md) - SLOs, ops gates, and runbooks.
+
 ## 📦 Samples & UI
 *   [**Base Template Examples**](base-template-examples.md) - Common patterns in the boilerplate.
 *   [**UI Admin Dashboard**](ui-admin-dashboard.md) - Integrating with the frontend admin panel.
