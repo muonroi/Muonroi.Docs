@@ -39,3 +39,24 @@ Run one-shot expression:
 ```bash
 dotnet run --project D:\Personal\Project\MuonroiBuildingBlock\Samples\FeelPlayground\FeelPlayground.csproj -- "5 in (1..10)"
 ```
+
+## 3. Template Workflow API (Base/Micro/Modular)
+
+Purpose:
+
+- Verify new workflow adapter (`MRuleWorkflowRunner<TContext>`) in real template-generated apps.
+- Validate both rule path and traditional path through one API.
+
+Endpoint:
+
+```http
+GET /api/v1/rules/workflow/{value}?mode=Rules
+GET /api/v1/rules/workflow/{value}?mode=Traditional
+```
+
+Expected output:
+
+- `result.executedSteps`: `start > evaluate-rules > route > even-branch/odd-branch > end`
+- `result.facts.workflowDecision`
+- `result.facts.riskLevel`
+- `result.state.traditionalPathUsed` when `mode=Traditional`

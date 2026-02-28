@@ -218,6 +218,7 @@ See the [Rule Rollout Guide](rule-rollout-guide.md) for practical steps.
 - [Rule Engine Configuration Reference](rule-engine-configuration-reference.md)
 - [Rule Engine Dependencies Guide](rule-engine-dependencies.md)
 - [Rule Engine Advanced Patterns](rule-engine-advanced-patterns.md)
+- [Rule Workflow Adapter Guide](rule-workflow-adapter-guide.md)
 
 ## Runtime and performance
 

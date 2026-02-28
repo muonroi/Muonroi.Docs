@@ -61,6 +61,8 @@
       href: 03-guides/rule-engine/feel-reference.md
     - name: FEEL Migration Guide
       href: 03-guides/rule-engine/feel-migration-guide.md
+    - name: Rule Workflow Adapter Guide
+      href: 03-guides/rule-engine/rule-workflow-adapter-guide.md
     - name: Rule Engine (Tiếng Việt)
       href: 03-guides/rule-engine/rule-engine-guide.vi.md
     - name: Rule Engine Upgrade (Tiếng Việt)
@@ -193,6 +195,8 @@
     href: 06-resources/release-checklist.md
   - name: Upgrade Guide
     href: 06-resources/upgrade-guide.md
+  - name: UI Engine Full Upgrade (2026)
+    href: 06-resources/ui-engine-upgrade-2026.md
   - name: Test Matrix Guide
     href: 06-resources/test-matrix-guide.md
   - name: BuildingBlock Mirror

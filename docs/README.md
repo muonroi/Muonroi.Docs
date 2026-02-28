@@ -43,6 +43,7 @@ Welcome to the official documentation for Muonroi Building Block. This guide is 
 *   [**Configuration Reference**](03-guides/rule-engine/rule-engine-configuration-reference.md) - Runtime/store configuration options.
 *   [**Dependencies Guide**](03-guides/rule-engine/rule-engine-dependencies.md) - Dependency ordering and cycle prevention.
 *   [**Advanced Patterns**](03-guides/rule-engine/rule-engine-advanced-patterns.md) - Hybrid/shadow rollout and code-first extraction.
+*   [**Workflow Adapter Guide**](03-guides/rule-engine/rule-workflow-adapter-guide.md) - BPMN-like orchestration with rule tasks, service tasks, and gateways.
 *   [**NRules Integration**](03-guides/rule-engine/nrules-integration.md) - Advanced rule patterns using NRules.
 
 ## 🌐 DevOps & Infrastructure
