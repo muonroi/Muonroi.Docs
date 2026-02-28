@@ -59,6 +59,8 @@ title: Muonroi Building Block
       <a class="card" href="docs/rule-engine-guide.md"><h3>Rule Engine</h3><p>Rules, workflows, and evaluation.</p></a>
       <a class="card" href="docs/rule-governance-guide.md"><h3>Governance</h3><p>Manage, version, and validate rules.</p></a>
       <a class="card" href="docs/rule-rollout-guide.md"><h3>Rollout</h3><p>Gradual enablement and safety.</p></a>
+      <a class="card" href="docs/rule-engine-testing-guide.md"><h3>Testing</h3><p>Unit/integration/contract testing patterns.</p></a>
+      <a class="card" href="docs/rule-engine-advanced-patterns.md"><h3>Advanced Patterns</h3><p>Hybrid/shadow runtime and extraction workflow.</p></a>
     </div>
   </section>
 

@@ -60,4 +60,4 @@ Refer to the [Multi-Tenant Guide](multi-tenant-guide.md) and [Permission Guide](
 Also see:
 
 - [Getting Started](getting-started.md): minimal API setup and configuration.
-- [UI Auth Admin Dashboard](ui-admin-dashboard.md): connect the Angular UI, login with the seeded admin, and manage roles/permissions from the dashboard.
+- [Permission Tree Guide](permission-tree-guide.md): synchronize permission tree and metadata to client applications.

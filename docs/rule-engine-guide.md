@@ -212,6 +212,15 @@ Rules can be deployed with safeguards to limit the blast radius of changes:
 
 See the [Rule Rollout Guide](rule-rollout-guide.md) for practical steps.
 
+## Related guides
+
+- [Rule Engine Testing Guide](rule-engine-testing-guide.md)
+- [Rule Engine External Services Guide](rule-engine-external-services.md)
+- [Rule Engine Hooks Guide](rule-engine-hooks-guide.md)
+- [Rule Engine Configuration Reference](rule-engine-configuration-reference.md)
+- [Rule Engine Dependencies Guide](rule-engine-dependencies.md)
+- [Rule Engine Advanced Patterns](rule-engine-advanced-patterns.md)
+
 ## Runtime and performance
 
 For large fact sets and low latency, rule engines benefit from incremental pattern matching algorithms such as Rete and Phreak. NRules builds a Rete network, while [Drools](https://docs.drools.org/latest/drools-docs/html_single/) explains its Phreak engine and inference model. Tuning sessions and retained facts to match the workload avoids unnecessary recalculation.

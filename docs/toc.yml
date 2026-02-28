@@ -9,8 +9,6 @@
     href: quickstart.md
   - name: "Quickstart: Multi-Tenant API"
     href: quickstart-multi-tenant-api.md
-  - name: UI Auth Admin Dashboard
-    href: ui-admin-dashboard.md
 
 - name: Architecture
   items:
@@ -22,8 +20,6 @@
     href: arch/tenancy-models.md
   - name: EF Filters
     href: arch/ef-filters.md
-  - name: Frontend Integration
-    href: frontend-integration.md
 
 - name: Multi-Tenancy
   items:
@@ -56,8 +52,6 @@
     href: token-guide.md
   - name: Token Guide (Ti?ng Vi?t)
     href: token-guide.vi.md
-  - name: UI Auth Admin Dashboard
-    href: ui-admin-dashboard.md
 
 - name: Enterprise (Private)
   items:
@@ -99,6 +93,18 @@
     href: rule-governance-guide.md
   - name: Rule Rollout Guide
     href: rule-rollout-guide.md
+  - name: Rule Engine Testing Guide
+    href: rule-engine-testing-guide.md
+  - name: Rule Engine External Services
+    href: rule-engine-external-services.md
+  - name: Rule Engine Hooks Guide
+    href: rule-engine-hooks-guide.md
+  - name: Rule Engine Configuration Reference
+    href: rule-engine-configuration-reference.md
+  - name: Rule Engine Dependencies
+    href: rule-engine-dependencies.md
+  - name: Rule Engine Advanced Patterns
+    href: rule-engine-advanced-patterns.md
   - name: NRules Integration
     href: nrules-integration.md
   - name: Workflow JSON Format (Ti?ng Vi?t)

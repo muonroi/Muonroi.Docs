@@ -29,6 +29,12 @@ Welcome to the official documentation for Muonroi Building Block. This guide is 
 *   [**Rule Engine Guide**](rule-engine-guide.md) - Core concepts: `IRule<T>`, Workflows, and Facts.
 *   [**Rule Governance**](rule-governance-guide.md) - Versioning, signing, and managing rule sets.
 *   [**Rule Rollout**](rule-rollout-guide.md) - Feature flags and gradual rollout strategies.
+*   [**Rule Testing Guide**](rule-engine-testing-guide.md) - Unit/integration/contract testing patterns.
+*   [**External Services in Rules**](rule-engine-external-services.md) - REST/gRPC integration and resilience patterns.
+*   [**Hooks Guide**](rule-engine-hooks-guide.md) - Logging/audit/error/performance hook patterns.
+*   [**Configuration Reference**](rule-engine-configuration-reference.md) - Runtime/store configuration options.
+*   [**Dependencies Guide**](rule-engine-dependencies.md) - Dependency ordering and cycle prevention.
+*   [**Advanced Patterns**](rule-engine-advanced-patterns.md) - Hybrid/shadow rollout and code-first extraction.
 *   [**NRules Integration**](nrules-integration.md) - Advanced rule patterns using NRules.
 
 ## 🌐 DevOps & Infrastructure
@@ -46,10 +52,8 @@ Welcome to the official documentation for Muonroi Building Block. This guide is 
 *   [**Enterprise Compliance (E4)**](enterprise/enterprise-compliance-e4.md) - Audit and compliance workflows.
 *   [**Enterprise Operations (E5)**](enterprise/enterprise-operations-e5.md) - SLOs, ops gates, and runbooks.
 
-## 📦 Samples & UI
+## 📦 Samples
 *   [**Base Template Examples**](base-template-examples.md) - Common patterns in the boilerplate.
-*   [**UI Admin Dashboard**](ui-admin-dashboard.md) - Integrating with the frontend admin panel.
-*   [**Frontend Integration**](frontend-integration.md) - connecting Angular/Flutter apps.
 
 ---
 *Cannot find what you are looking for? Check the [Database Structure](database-structure.md) or open an issue on GitHub.*

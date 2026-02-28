@@ -33,4 +33,3 @@ Nếu bạn mới làm quen với Muonroi Building Block, nên tham khảo theo 
 - [Template Quickstart Guide](template-quickstart.md): Tạo project mới từ template với hướng dẫn chi tiết.
 - [Bắt đầu sử dụng](getting-started.md): cấu hình nhanh API và appsettings.
 - [Performance Guide](performance-guide.md): Tối ưu hiệu năng cho production.
-- [UI Auth Admin Dashboard](ui-admin-dashboard.md): kết nối UI với API, đăng nhập admin mặc định và quản lý vai trò/quyền trên giao diện.

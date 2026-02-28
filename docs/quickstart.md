@@ -18,4 +18,4 @@ dotnet new muonroibase -n MyService
 ## Next
 
 - Configure your API: see [Getting Started](getting-started.md)
-- Connect UI and manage roles/permissions: [UI Auth Admin Dashboard](ui-admin-dashboard.md)
+- Configure permissions and RBAC: [Permission Guide](permission-guide.md)

@@ -111,5 +111,5 @@ Ví dụ rút gọn:
 
 ## Kế tiếp
 
-- UI Auth Admin Dashboard: kết nối UI với API, đăng nhập tài khoản admin mặc định và quản lý vai trò/quyền trực tiếp trên giao diện.
-  Xem: [UI Auth Admin Dashboard](ui-admin-dashboard.md)
+- [Hướng dẫn phân quyền](permission-guide.md): cấu hình RBAC và quyền chi tiết.
+- [Permission Tree Guide](permission-tree-guide.md): đồng bộ cây quyền cho ứng dụng client.
