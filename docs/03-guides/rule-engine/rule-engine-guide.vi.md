@@ -1,6 +1,7 @@
 # Hướng dẫn Rule Engine
 
 *Xem [bản tiếng Anh](rule-engine-guide.md).* 
+*Xem thêm tài liệu nâng cấp chi tiết: [Rule Engine Upgrade (Tiếng Việt)](rule-engine-upgrade-guide.vi.md).*
 
 Muonroi rule engine giúp tách logic nghiệp vụ thành các rule nhỏ có thể tái sử dụng. Engine hỗ trợ cả rule viết bằng C# lẫn workflow JSON động. Tài liệu này mô tả các bước cơ bản để áp dụng rule engine trong ứng dụng của bạn.
 

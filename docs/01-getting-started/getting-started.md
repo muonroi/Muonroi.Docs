@@ -111,5 +111,5 @@ Ví dụ rút gọn:
 
 ## Kế tiếp
 
-- [Hướng dẫn phân quyền](permission-guide.md): cấu hình RBAC và quyền chi tiết.
-- [Permission Tree Guide](permission-tree-guide.md): đồng bộ cây quyền cho ứng dụng client.
+- [Hướng dẫn phân quyền](../03-guides/identity-access/permission-guide.md): cấu hình RBAC và quyền chi tiết.
+- [Permission Tree Guide](../03-guides/identity-access/permission-tree-guide.md): đồng bộ cây quyền cho ứng dụng client.

@@ -1,0 +1,38 @@
+# MuonroiBuildingBlock Markdown Mirror
+
+Trang này tổng hợp các file `*.md` được đồng bộ từ:
+
+- `D:\Personal\Project\MuonroiBuildingBlock`
+
+Tổng số file hiện tại: **28**
+
+## Danh sách file
+
+- [3-TIER-QUICK-REFERENCE.md](./3-TIER-QUICK-REFERENCE.md)
+- [3-TIER-SECURITY-SUMMARY.md](./3-TIER-SECURITY-SUMMARY.md)
+- [ADVANCED_AUTH_RBAC_PLUS_UPGRADE_PLAN.md](./ADVANCED_AUTH_RBAC_PLUS_UPGRADE_PLAN.md)
+- [ADVANCED_AUTH_RBAC_PLUS_UPGRADE_REPORT.md](./ADVANCED_AUTH_RBAC_PLUS_UPGRADE_REPORT.md)
+- [AGENT_LICENSE_KEY_RUNBOOK.md](./AGENT_LICENSE_KEY_RUNBOOK.md)
+- [agent.md](./agent.md)
+- [CHANGELOG.md](./CHANGELOG.md)
+- [COMMERCIAL-EDITIONS.md](./COMMERCIAL-EDITIONS.md)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
+- [docs/control-plane-mvp.md](./docs/control-plane-mvp.md)
+- [docs/enterprise-centralized-authorization-e3.md](./docs/enterprise-centralized-authorization-e3.md)
+- [docs/enterprise-compliance-e4.md](./docs/enterprise-compliance-e4.md)
+- [docs/enterprise-operations-e5.md](./docs/enterprise-operations-e5.md)
+- [docs/enterprise-secure-profile-e2.md](./docs/enterprise-secure-profile-e2.md)
+- [docs/license-capability-model.md](./docs/license-capability-model.md)
+- [DYNAMIC_BUSINESS_LOGIC_CLOUD_ROADMAP.md](./DYNAMIC_BUSINESS_LOGIC_CLOUD_ROADMAP.md)
+- [ENTERPRISE-UPGRADE-RESEARCH-PHASE.md](./ENTERPRISE-UPGRADE-RESEARCH-PHASE.md)
+- [k8s/namespaces/README.md](./k8s/namespaces/README.md)
+- [MULTI_TENANCY_UPGRADE_PLAN.md](./MULTI_TENANCY_UPGRADE_PLAN.md)
+- [README.md](./README.md)
+- [RULE_ENGINE_UPGRADE_PLAN.md](./RULE_ENGINE_UPGRADE_PLAN.md)
+- [RULE_ENGINE_UPGRADE_REPORT.md](./RULE_ENGINE_UPGRADE_REPORT.md)
+- [SECURITY.md](./SECURITY.md)
+- [src/Muonroi.BuildingBlock/External/Controller/Rules/README_CRUD_RULES.md](./src/Muonroi.BuildingBlock/External/Controller/Rules/README_CRUD_RULES.md)
+- [UI-CONTRACT-FIRST-UPGRADE-PLAN.md](./UI-CONTRACT-FIRST-UPGRADE-PLAN.md)
+- [upgrade_rule_engine.md](./upgrade_rule_engine.md)
+- [valiant-dreaming-russell.md](./valiant-dreaming-russell.md)
+- [VULNERABILITY_REPORT.md](./VULNERABILITY_REPORT.md)

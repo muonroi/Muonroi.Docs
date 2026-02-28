@@ -35,4 +35,4 @@ erDiagram
     MPermissionGroups ||--|{ MPermissions : "contains"
 ```
 
-Use the [Permission Guide](permission-guide.md) for details on how permissions are defined and enforced.
+Use the [Permission Guide](../03-guides/identity-access/permission-guide.md) for details on how permissions are defined and enforced.

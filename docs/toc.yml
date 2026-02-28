@@ -1,162 +1,177 @@
 ### YamlMime:TableOfContent
-- name: Start Here
+
+- name: 🚀 Getting Started
   items:
   - name: Introduction
-    href: introduction.md
+    href: 01-getting-started/introduction.md
   - name: Getting Started
-    href: getting-started.md
+    href: 01-getting-started/getting-started.md
   - name: Quickstart
-    href: quickstart.md
+    href: 01-getting-started/quickstart.md
+  - name: Template Quickstart
+    href: 01-getting-started/template-quickstart.md
   - name: "Quickstart: Multi-Tenant API"
-    href: quickstart-multi-tenant-api.md
+    href: 01-getting-started/quickstart-multi-tenant-api.md
 
-- name: Architecture
+- name: 🧩 Concepts
   items:
   - name: Architecture Overview
-    href: architecture-overview.md
-  - name: Architecture Overview (Ti?ng Vi?t)
-    href: architecture-overview.vi.md
+    href: 02-concepts/architecture-overview.md
+  - name: Architecture Overview (Tiếng Việt)
+    href: 02-concepts/architecture-overview.vi.md
   - name: Tenancy Models
-    href: arch/tenancy-models.md
+    href: 02-concepts/tenancy-models.md
   - name: EF Filters
-    href: arch/ef-filters.md
+    href: 02-concepts/ef-filters.md
 
-- name: Multi-Tenancy
+- name: 🛠️ How-to Guides
   items:
-  - name: Multi-Tenant Guide
-    href: multi-tenant-guide.md
-  - name: Multi-Tenant Guide (Ti?ng Vi?t)
-    href: multi-tenant-guide.vi.md
-  - name: Tenant Isolation
-    href: storage/tenant-isolation.md
+  - name: 👤 Identity & Access
+    items:
+    - name: Authorization & Permissions
+      href: 03-guides/identity-access/permission-guide.md
+    - name: Permission Tree Guide
+      href: 03-guides/identity-access/permission-tree-guide.md
+    - name: External Auth Guide
+      href: 03-guides/identity-access/external-auth-guide.md
+    - name: Auth/AuthZ/BFF Guide
+      href: 03-guides/identity-access/auth-module-guide.md
+    - name: Auth/AuthZ/BFF Guide (Tiếng Việt)
+      href: 03-guides/identity-access/auth-module-guide.vi.md
+    - name: BFF Guide
+      href: 03-guides/identity-access/bff.md
+    - name: MFA Guide
+      href: 03-guides/identity-access/mfa.md
+    - name: OAuth2 & OIDC Guide
+      href: 03-guides/identity-access/oauth2-oidc.md
+    - name: Token Guide
+      href: 03-guides/identity-access/token-guide.md
+    - name: Token Guide (Tiếng Việt)
+      href: 03-guides/identity-access/token-guide.vi.md
 
-- name: Security
-  items:
-  - name: Authorization & Permissions
-    href: permission-guide.md
-  - name: Permission Tree Guide
-    href: permission-tree-guide.md
-  - name: External Auth Guide
-    href: external-auth-guide.md
-  - name: Auth/AuthZ/BFF Guide
-    href: auth-module-guide.md
-  - name: Auth/AuthZ/BFF Guide (Ti?ng Vi?t)
-    href: auth-module-guide.vi.md
-  - name: BFF Guide
-    href: security/bff.md
-  - name: MFA Guide
-    href: security/mfa.md
-  - name: OAuth2 & OIDC Guide
-    href: security/oauth2-oidc.md
-  - name: Token Guide
-    href: token-guide.md
-  - name: Token Guide (Ti?ng Vi?t)
-    href: token-guide.vi.md
+  - name: 🧠 Rule Engine
+    items:
+    - name: Rule Engine
+      href: 03-guides/rule-engine/rule-engine-guide.md
+    - name: Rule Engine (Tiếng Việt)
+      href: 03-guides/rule-engine/rule-engine-guide.vi.md
+    - name: Rule Engine Upgrade (Tiếng Việt)
+      href: 03-guides/rule-engine/rule-engine-upgrade-guide.vi.md
+    - name: Rule Governance Guide
+      href: 03-guides/rule-engine/rule-governance-guide.md
+    - name: Rule Rollout Guide
+      href: 03-guides/rule-engine/rule-rollout-guide.md
+    - name: Rule Engine Testing Guide
+      href: 03-guides/rule-engine/rule-engine-testing-guide.md
+    - name: Rule Engine External Services
+      href: 03-guides/rule-engine/rule-engine-external-services.md
+    - name: Rule Engine Hooks Guide
+      href: 03-guides/rule-engine/rule-engine-hooks-guide.md
+    - name: Rule Engine Configuration Reference
+      href: 03-guides/rule-engine/rule-engine-configuration-reference.md
+    - name: Rule Engine Dependencies
+      href: 03-guides/rule-engine/rule-engine-dependencies.md
+    - name: Rule Engine Advanced Patterns
+      href: 03-guides/rule-engine/rule-engine-advanced-patterns.md
+    - name: NRules Integration
+      href: 03-guides/rule-engine/nrules-integration.md
+    - name: Workflow JSON Format (Tiếng Việt)
+      href: 03-guides/rule-engine/workflow-json-format.vi.md
 
-- name: Enterprise (Private)
-  items:
-  - name: License Capability Model
-    href: enterprise/license-capability-model.md
-  - name: Control Plane MVP
-    href: enterprise/control-plane-mvp.md
-  - name: Enterprise Secure Profile (E2)
-    href: enterprise/enterprise-secure-profile-e2.md
-  - name: Enterprise Centralized Authorization (E3)
-    href: enterprise/enterprise-centralized-authorization-e3.md
-  - name: Enterprise Compliance (E4)
-    href: enterprise/enterprise-compliance-e4.md
-  - name: Enterprise Operations (E5)
-    href: enterprise/enterprise-operations-e5.md
+  - name: 🏢 Multi-Tenancy
+    items:
+    - name: Multi-Tenant Guide
+      href: 03-guides/multi-tenancy/multi-tenant-guide.md
+    - name: Multi-Tenant Guide (Tiếng Việt)
+      href: 03-guides/multi-tenancy/multi-tenant-guide.vi.md
+    - name: Tenant Isolation
+      href: 03-guides/multi-tenancy/tenant-isolation.md
 
-- name: Integration
-  items:
-  - name: Gateway Configuration
-    href: gateway-guide.md
-  - name: gRPC Guide
-    href: grpc-guide.md
-  - name: SignalR Guide
-    href: signalr-guide.md
-  - name: Dapper Guide
-    href: dapper-guide.md
-  - name: Cache Guide
-    href: cache-guide.md
-  - name: OPA Integration Guide
-    href: opa-integration-guide.md
+  - name: 🔗 Integration
+    items:
+    - name: Backend Development
+      href: 03-guides/integration/backend-guide.md
+    - name: Gateway Configuration
+      href: 03-guides/integration/gateway-guide.md
+    - name: gRPC Guide
+      href: 03-guides/integration/grpc-guide.md
+    - name: SignalR Guide
+      href: 03-guides/integration/signalr-guide.md
+    - name: Dapper Guide
+      href: 03-guides/integration/dapper-guide.md
+    - name: Cache Guide
+      href: 03-guides/integration/cache-guide.md
+    - name: OPA Integration Guide
+      href: 03-guides/integration/opa-integration-guide.md
+    - name: Data Access
+      href: 03-guides/integration/data-layer.md
+    - name: Saga Pattern with Kafka
+      href: 03-guides/integration/saga-kafka.md
 
-- name: Rule Engine
-  items:
-  - name: Rule Engine
-    href: rule-engine-guide.md
-  - name: Rule Engine (Ti?ng Vi?t)
-    href: rule-engine-guide.vi.md
-  - name: Rule Governance Guide
-    href: rule-governance-guide.md
-  - name: Rule Rollout Guide
-    href: rule-rollout-guide.md
-  - name: Rule Engine Testing Guide
-    href: rule-engine-testing-guide.md
-  - name: Rule Engine External Services
-    href: rule-engine-external-services.md
-  - name: Rule Engine Hooks Guide
-    href: rule-engine-hooks-guide.md
-  - name: Rule Engine Configuration Reference
-    href: rule-engine-configuration-reference.md
-  - name: Rule Engine Dependencies
-    href: rule-engine-dependencies.md
-  - name: Rule Engine Advanced Patterns
-    href: rule-engine-advanced-patterns.md
-  - name: NRules Integration
-    href: nrules-integration.md
-  - name: Workflow JSON Format (Ti?ng Vi?t)
-    href: workflow-json-format.vi.md
+  - name: 💎 Enterprise (Private)
+    items:
+    - name: License Capability Model
+      href: 03-guides/enterprise/license-capability-model.md
+    - name: Control Plane MVP
+      href: 03-guides/enterprise/control-plane-mvp.md
+    - name: Enterprise Secure Profile (E2)
+      href: 03-guides/enterprise/enterprise-secure-profile-e2.md
+    - name: Enterprise Centralized Authorization (E3)
+      href: 03-guides/enterprise/enterprise-centralized-authorization-e3.md
+    - name: Enterprise Compliance (E4)
+      href: 03-guides/enterprise/enterprise-compliance-e4.md
+    - name: Enterprise Operations (E5)
+      href: 03-guides/enterprise/enterprise-operations-e5.md
 
-- name: Operations
+- name: ⚙️ Operations
   items:
   - name: Background Jobs
-    href: background-jobs-guide.md
+    href: 04-operations/background-jobs-guide.md
   - name: Observability
-    href: observability-guide.md
+    href: 04-operations/observability-guide.md
+  - name: Performance Guide
+    href: 04-operations/performance-guide.md
   - name: Secret Management
-    href: secret-management.md
+    href: 04-operations/secret-management.md
   - name: CI/CD with Docker & K8s
-    href: ci-cd-docker-k8s.md
+    href: 04-operations/ci-cd-docker-k8s.md
   - name: Canary & Shadow
-    href: ops/canary-shadow.md
+    href: 04-operations/canary-shadow.md
   - name: Tenant DR Playbook
-    href: ops/dr-tenant-playbook.md
+    href: 04-operations/dr-tenant-playbook.md
   - name: Azure SQL Elastic Jobs
-    href: ops/elastic-jobs.md
+    href: 04-operations/elastic-jobs.md
 
-- name: Base Template & Examples
+- name: 📖 Reference
   items:
-  - name: Base Template
-    href: muonroibase-template.md
-  - name: BaseTemplate Examples
-    href: base-template-examples.md
+  - name: Appsettings Configuration
+    href: 05-reference/appsettings-guide.md
+  - name: Database Structure
+    href: 05-reference/database-structure.md
+  - name: Extensions Reference
+    href: 05-reference/extensions-log.md
+  - name: Interface Services
+    href: 05-reference/interface-guide.md
+  - name: Timing Reference
+    href: 05-reference/timing-guide.md
 
-- name: Guides & Checklists
+- name: 📚 Resources
   items:
   - name: Usage Guide
-    href: usage-guide.md
+    href: 06-resources/usage-guide.md
   - name: Feature Flags
-    href: feature-flags.md
-  - name: Data Access
-    href: data-layer.md
-  - name: Database Structure
-    href: database-structure.md
-  - name: Extensions Reference
-    href: extensions-log.md
-  - name: Interface Services
-    href: interface-guide.md
-  - name: Timing
-    href: timing-guide.md
-  - name: Saga Pattern with Kafka
-    href: saga-kafka.md
-  - name: Test Matrix Guide
-    href: test-matrix-guide.md
+    href: 06-resources/feature-flags.md
+  - name: Base Template
+    href: 06-resources/muonroibase-template.md
+  - name: BaseTemplate Examples
+    href: 06-resources/base-template-examples.md
   - name: ASVS Checklist
-    href: asvs-checklist.md
+    href: 06-resources/asvs-checklist.md
   - name: Release Checklist
-    href: release-checklist.md
+    href: 06-resources/release-checklist.md
   - name: Upgrade Guide
-    href: upgrade-guide.md
+    href: 06-resources/upgrade-guide.md
+  - name: Test Matrix Guide
+    href: 06-resources/test-matrix-guide.md
+  - name: BuildingBlock Mirror
+    href: 06-resources/buildingblock/index.md
