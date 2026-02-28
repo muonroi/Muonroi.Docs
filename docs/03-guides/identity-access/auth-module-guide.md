@@ -6,8 +6,8 @@ This guide describes how to configure authentication, authorization, BFF and mul
 
 - [Token Guide](token-guide.md)
 - [External Auth Guide](external-auth-guide.md)
-- [BFF Guide](security/bff.md)
-- [OPA Integration Guide](opa-integration-guide.md)
+- [BFF Guide](./bff.md)
+- [OPA Integration Guide](../integration/opa-integration-guide.md)
 
 ## Auth module (Authentication)
 
@@ -81,7 +81,7 @@ In an SPA + BFF setup, the frontend only holds an auth cookie. The SPA calls the
 
 ### OPA Authorization
 
-For finer-grained access control, integrate `OpaAuthorizationService` before proxying to downstream services. See the [OPA Integration Guide](opa-integration-guide.md) for configuring the OPA server and .NET client.
+For finer-grained access control, integrate `OpaAuthorizationService` before proxying to downstream services. See the [OPA Integration Guide](../integration/opa-integration-guide.md) for configuring the OPA server and .NET client.
 
 ## Multi-Tenant
 
@@ -109,5 +109,5 @@ app.UseMiddleware<MAuthenMiddleware<MyDbContext, MyPermission>>();
 
 See `Samples/AuthAuthzBff` for an end-to-end flow with OIDC, OPA and BFF.
 
-Refer to the [BFF Guide](security/bff.md) and [OPA Integration Guide](opa-integration-guide.md) for detailed configuration.
+Refer to the [BFF Guide](./bff.md) and [OPA Integration Guide](../integration/opa-integration-guide.md) for detailed configuration.
 

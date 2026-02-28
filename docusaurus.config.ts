@@ -14,7 +14,7 @@ const config: Config = {
   projectName: 'Muonroi.Docs',
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn', // Moved here
 
   i18n: {
     defaultLocale: 'en',
@@ -30,6 +30,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/docs',
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/muonroi/Muonroi.Docs/tree/main/',
         },
@@ -72,8 +73,8 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
-            { label: 'Introduction', to: '/docs/01-getting-started/introduction' },
-            { label: 'Getting Started', to: '/docs/01-getting-started/getting-started' },
+            { label: 'Introduction', to: '/docs/getting-started/introduction' },
+            { label: 'Getting Started', to: '/docs/getting-started/getting-started' },
           ],
         },
         {

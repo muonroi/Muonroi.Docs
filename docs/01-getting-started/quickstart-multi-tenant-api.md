@@ -1,6 +1,6 @@
 # Quickstart: Multi-Tenant API with JWT & RBAC
 
-This guide walks through creating a minimal WebAPI using **Muonroi.BuildingBlock** with multi-tenant support, JWT authentication, and role-based access control. A ready-to-use [Postman collection](postman/multi-tenant-jwt-rbac.postman_collection.json) is included for quick testing.
+This guide walks through creating a minimal WebAPI using **Muonroi.BuildingBlock** with multi-tenant support, JWT authentication, and role-based access control. A ready-to-use [Postman collection](/collections/multi-tenant-jwt-rbac.postman_collection.json) is included for quick testing.
 
 ## 1. Scaffold the Project
 
@@ -44,7 +44,7 @@ Add tenant configuration and JWT settings:
 
 ## 4. Run and Test
 
-Start the API and import the [Postman collection](postman/multi-tenant-jwt-rbac.postman_collection.json). The collection demonstrates:
+Start the API and import the [Postman collection](/collections/multi-tenant-jwt-rbac.postman_collection.json). The collection demonstrates:
 
 * Logging in to obtain a JWT
 * Calling a tenant-scoped endpoint with RBAC enforcement
@@ -55,9 +55,9 @@ dotnet run --project MultiTenantSample
 
 ## 5. Next Steps
 
-Refer to the [Multi-Tenant Guide](multi-tenant-guide.md) and [Permission Guide](permission-guide.md) for advanced scenarios.
+Refer to the [Multi-Tenant Guide](../03-guides/multi-tenancy/multi-tenant-guide.md) and [Permission Guide](../03-guides/identity-access/permission-guide.md) for advanced scenarios.
 
 Also see:
 
-- [Getting Started](getting-started.md): minimal API setup and configuration.
-- [Permission Tree Guide](permission-tree-guide.md): synchronize permission tree and metadata to client applications.
+- [Getting Started](./getting-started.md): minimal API setup and configuration.
+- [Permission Tree Guide](../03-guides/identity-access/permission-tree-guide.md): synchronize permission tree and metadata to client applications.

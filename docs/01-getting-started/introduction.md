@@ -7,7 +7,7 @@ Muonroi Building Block là bộ thư viện hỗ trợ xây dựng các ứng d�
 - **Middleware** xác thực và phân quyền dựa trên JWT.
 - **Các lớp cơ sở** cho controller, handler và repository.
 - **Hệ thống caching**, background job và message bus.
-- **Rule engine** hỗ trợ rule C# và workflow JSON. Xem thêm: [Hướng dẫn Rule Engine](rule-engine-guide.vi.md).
+- **Rule engine** hỗ trợ rule C# và workflow JSON. Xem thêm: [Hướng dẫn Rule Engine](../03-guides/rule-engine/rule-engine-guide.md).
 
 Những tính năng này giúp dự án khởi tạo nhanh, thống nhất và dễ bảo trì. Hãy xem các hướng dẫn bên dưới để bắt đầu sử dụng.
 
@@ -15,21 +15,21 @@ Những tính năng này giúp dự án khởi tạo nhanh, thống nhất và d
 
 Nếu bạn mới làm quen với Muonroi Building Block, nên tham khảo theo thứ tự:
 
-1. **Tạo project mới** bằng [Template Quickstart Guide](template-quickstart.md) - Hướng dẫn chi tiết từng bước.
-2. Cấu hình các thành phần cơ bản qua [Bắt đầu sử dụng](getting-started.md).
+1. **Tạo project mới** bằng [Template Quickstart Guide](./template-quickstart.md) - Hướng dẫn chi tiết từng bước.
+2. Cấu hình các thành phần cơ bản qua [Bắt đầu sử dụng](./getting-started.md).
 3. Tìm hiểu các khái niệm nền tảng:
-   - [Dependency Injection và cấu hình dịch vụ](usage-guide.md).
-   - [Xác thực và ủy quyền](auth-module-guide.vi.md).
-   - [Phân quyền chi tiết](permission-guide.md).
+   - [Dependency Injection và cấu hình dịch vụ](../06-resources/usage-guide.md).
+   - [Xác thực và ủy quyền](../03-guides/identity-access/auth-module-guide.md).
+   - [Phân quyền chi tiết](../03-guides/identity-access/permission-guide.md).
 4. Khi cần mở rộng, khám phá các module nâng cao:
-   - [Caching](cache-guide.md).
-   - [Message Bus](appsettings-guide.md#message-bus) và [Saga với Kafka](saga-kafka.md).
-5. Tối ưu hiệu năng với [Performance Guide](performance-guide.md).
+   - [Caching](../03-guides/integration/cache-guide.md).
+   - [Message Bus](../05-reference/appsettings-guide.md#message-bus) và [Saga với Kafka](../03-guides/integration/saga-kafka.md).
+5. Tối ưu hiệu năng với [Performance Guide](../04-operations/performance-guide.md).
 
-Để nắm được kiến trúc tổng quan của thư viện, xem thêm [Kiến trúc tổng quan](architecture-overview.vi.md).
+Để nắm được kiến trúc tổng quan của thư viện, xem thêm [Kiến trúc tổng quan](../02-concepts/architecture-overview.md).
 
 ## Kế tiếp
 
-- [Template Quickstart Guide](template-quickstart.md): Tạo project mới từ template với hướng dẫn chi tiết.
-- [Bắt đầu sử dụng](getting-started.md): cấu hình nhanh API và appsettings.
-- [Performance Guide](performance-guide.md): Tối ưu hiệu năng cho production.
+- [Template Quickstart Guide](./template-quickstart.md): Tạo project mới từ template với hướng dẫn chi tiết.
+- [Bắt đầu sử dụng](./getting-started.md): cấu hình nhanh API và appsettings.
+- [Performance Guide](../04-operations/performance-guide.md): Tối ưu hiệu năng cho production.

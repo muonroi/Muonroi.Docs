@@ -25,4 +25,4 @@ Kết quả sẽ tạo thư mục `MyService` với cấu trúc dự án mẫu g
 
 Sau khi tạo, bạn chỉ cần chỉnh lại namespace và bổ sung cấu hình theo nhu cầu.
 
-Xem thêm [Quick Start](quickstart.md) để chạy thử.
+Xem thêm [Quick Start](../01-getting-started/quickstart.md) để chạy thử.

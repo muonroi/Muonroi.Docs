@@ -1,7 +1,5 @@
 # Rule Engine Guide
 
-*Also available in [Tiếng Việt](rule-engine-guide.vi.md).* 
-
 The Muonroi rule engine lets you split business logic into small reusable rules. It supports strongly typed rules written in C# and dynamic workflows described in JSON. This guide walks through the common tasks required to use the engine in your application.
 
 The component is optional and ships with the `Muonroi.BuildingBlock` NuGet package to handle complex business validations. Projects that do not need a rule engine can simply omit its registration.

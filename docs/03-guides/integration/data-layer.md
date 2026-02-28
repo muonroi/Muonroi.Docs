@@ -1,6 +1,6 @@
 # Quản lý dữ liệu với MDbContext và Repository
 
-Thư viện cung cấp sẵn các lớp **MRepository<T>**, **MQuery<T>** và `MDbContext` để thao tác với Entity Framework. Dưới đây giải thích một số khái niệm quan trọng.
+Thư viện cung cấp sẵn các lớp **`MRepository<T>`**, **`MQuery<T>`** và `MDbContext` để thao tác với Entity Framework. Dưới đây giải thích một số khái niệm quan trọng.
 
 ## DbSet và Queryable
 

@@ -21,7 +21,7 @@ Tài liệu này mô tả các bước đề xuất để cập nhật thư vi�
 
 ## 3. Cập nhật cấu hình
 - Kiểm tra lại file `appsettings.json` và bổ sung các phần cấu hình mới nếu có, ví dụ cấu hình `Serilog` hoặc `MessageBusConfigs`.
-- Tham khảo thêm tại tài liệu [usage-guide](usage-guide.md).
+- Tham khảo thêm tại tài liệu [usage-guide](./usage-guide.md).
 
 ## 4. Kiểm tra và build lại
 - Sau khi cập nhật, chạy lệnh:

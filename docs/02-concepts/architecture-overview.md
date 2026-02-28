@@ -71,9 +71,9 @@ Infrastructure (EF Core, Redis, Kafka, ...)
 
 ## 6. Further reading
 
-- [Permission Guide](permission-guide.md)
-- [Multi-Tenant Guide](multi-tenant-guide.md)
-- [Token Guide](token-guide.md)
-- [Cache Guide](cache-guide.md)
-- [Background Jobs Guide](background-jobs-guide.md)
-- [Saga Pattern with Kafka](saga-kafka.md)
+- [Permission Guide](../03-guides/identity-access/permission-guide.md)
+- [Multi-Tenant Guide](../03-guides/multi-tenancy/multi-tenant-guide.md)
+- [Token Guide](../03-guides/identity-access/token-guide.md)
+- [Cache Guide](../03-guides/integration/cache-guide.md)
+- [Background Jobs Guide](../04-operations/background-jobs-guide.md)
+- [Saga Pattern with Kafka](../03-guides/integration/saga-kafka.md)

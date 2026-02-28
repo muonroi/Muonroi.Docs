@@ -455,7 +455,7 @@ The library includes a three-tier license system. **By default, the library runs
 
 - Source code in this repository is MIT-licensed.
 - Paid tiers are for commercial capabilities around license governance and operations (signed policy workflow, server-side validation, anti-tampering hardening, enterprise support process).
-- Detailed positioning: [COMMERCIAL-EDITIONS.md](COMMERCIAL-EDITIONS.md)
+- Detailed positioning: [COMMERCIAL-EDITIONS.md](./COMMERCIAL-EDITIONS.md)
 
 #### License Tiers Comparison
 
@@ -895,12 +895,12 @@ For more details, see the guides in the `docs` directory:
 For a detailed checklist see [../../06-resources/asvs-checklist.md](../../06-resources/asvs-checklist.md).
 
 ## Documentation Index
-For a complete list of guides, visit the [Documentation Hub](docs/README.md).
+For a complete list of guides, visit the [Documentation Hub](../../README.md).
 
-*   **Essentials**: [Getting Started](docs/getting-started.md) | [Appsettings](../../05-reference/appsettings-guide.md) | [Architecture](docs/backend-guide.md)
-*   **Security**: [Auth Module](docs/auth-module-guide.md) | [Permissions](../../03-guides/identity-access/permission-guide.md) | [Multi-Tenant](../../03-guides/multi-tenancy/multi-tenant-guide.md)
-*   **Features**: [Auto-CRUD](docs/backend-guide.md#6-auto-crud-api-zero-code) | [Rule Engine](../../03-guides/rule-engine/rule-engine-guide.md) | [Auto-CRUD + Rules](../../03-guides/rule-engine/rule-engine-guide.md#auto-crud-with-business-rules) | [Caching](../../03-guides/integration/cache-guide.md)
-*   **Ops**: [Docker & K8s](../../04-operations/ci-cd-docker-k8s.md) | [Observability](docs/observability-guide.md) | [License Capability Model](../../03-guides/enterprise/license-capability-model.md) | [Enterprise Centralized Authorization E3](../../03-guides/enterprise/enterprise-centralized-authorization-e3.md) | [Enterprise Compliance and Evidence E4](../../03-guides/enterprise/enterprise-compliance-e4.md) | [Enterprise Operations Package E5](../../03-guides/enterprise/enterprise-operations-e5.md) | [Enterprise Upgrade Research](ENTERPRISE-UPGRADE-RESEARCH-PHASE.md)
+*   **Essentials**: [Getting Started](../../01-getting-started/getting-started.md) | [Appsettings](../../05-reference/appsettings-guide.md) | [Architecture](../../03-guides/integration/backend-guide.md)
+*   **Security**: [Auth Module](../../03-guides/identity-access/auth-module-guide.md) | [Permissions](../../03-guides/identity-access/permission-guide.md) | [Multi-Tenant](../../03-guides/multi-tenancy/multi-tenant-guide.md)
+*   **Features**: [Auto-CRUD](../../03-guides/integration/backend-guide.md#6-auto-crud-api-zero-code) | [Rule Engine](../../03-guides/rule-engine/rule-engine-guide.md) | [Auto-CRUD + Rules](../../03-guides/rule-engine/rule-engine-guide.md#auto-crud-with-business-rules) | [Caching](../../03-guides/integration/cache-guide.md)
+*   **Ops**: [Docker & K8s](../../04-operations/ci-cd-docker-k8s.md) | [Observability](../../04-operations/observability-guide.md) | [License Capability Model](../../03-guides/enterprise/license-capability-model.md) | [Enterprise Centralized Authorization E3](../../03-guides/enterprise/enterprise-centralized-authorization-e3.md) | [Enterprise Compliance and Evidence E4](../../03-guides/enterprise/enterprise-compliance-e4.md) | [Enterprise Operations Package E5](../../03-guides/enterprise/enterprise-operations-e5.md) | [Enterprise Upgrade Research](ENTERPRISE-UPGRADE-RESEARCH-PHASE.md)
 
 ## Formatting
 Run `dotnet format Muonroi.BuildingBlock.sln` to apply the coding style defined in `.editorconfig`.

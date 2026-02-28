@@ -141,7 +141,7 @@ Serilog is configured with `TenantIdEnricher` to automatically attach `TenantId`
 
 ## Examples
 
-- [Quickstart: Multi-Tenant API with JWT & RBAC](quickstart-multi-tenant-api.md)
+- [Quickstart: Multi-Tenant API with JWT & RBAC](../../01-getting-started/quickstart-multi-tenant-api.md)
 - Sample code:
-  - Program: [Samples/MultiTenant/Program.cs](../Samples/MultiTenant/Program.cs)
-  - Service: [Samples/MultiTenant/TenantExampleService.cs](../Samples/MultiTenant/TenantExampleService.cs)
+  - Program: [Samples/MultiTenant/Program.cs](https://github.com/muonroi/Muonroi.Docs/blob/main/Samples/MultiTenant/Program.cs)
+  - Service: [Samples/MultiTenant/TenantExampleService.cs](https://github.com/muonroi/Muonroi.Docs/blob/main/Samples/MultiTenant/TenantExampleService.cs)

@@ -18,4 +18,4 @@ dotnet new muonroibase -n MyService
 ## Next
 
 - Configure your API: see [Getting Started](getting-started.md)
-- Configure permissions and RBAC: [Permission Guide](permission-guide.md)
+- Configure permissions and RBAC: [Permission Guide](../03-guides/identity-access/permission-guide.md)
