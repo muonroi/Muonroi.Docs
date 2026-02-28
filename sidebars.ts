@@ -45,6 +45,10 @@ const sidebars: SidebarsConfig = {
           label: '🧠 Rule Engine',
           items: [
             'guides/rule-engine/rule-engine-guide',
+            'guides/rule-engine/decision-table-guide',
+            'guides/rule-engine/decision-table-api-reference',
+            'guides/rule-engine/feel-reference',
+            'guides/rule-engine/feel-migration-guide',
             'guides/rule-engine/rule-governance-guide',
             'guides/rule-engine/rule-rollout-guide',
             'guides/rule-engine/rule-engine-testing-guide',
@@ -62,6 +66,10 @@ const sidebars: SidebarsConfig = {
           items: [
             'guides/multi-tenancy/multi-tenant-guide',
             'guides/multi-tenancy/tenant-isolation',
+            'guides/multi-tenancy/multi-tenant-quota-guide',
+            'guides/multi-tenancy/quota-api-reference',
+            'guides/multi-tenancy/quota-dashboard-mockups',
+            'guides/multi-tenancy/tenant-quota-migration-guide',
           ],
         },
         {
@@ -105,6 +113,8 @@ const sidebars: SidebarsConfig = {
         'operations/canary-shadow',
         'operations/dr-tenant-playbook',
         'operations/elastic-jobs',
+        'operations/kubernetes-deployment-guide',
+        'operations/troubleshooting-guide',
       ],
     },
     {
@@ -125,6 +135,7 @@ const sidebars: SidebarsConfig = {
         'resources/feature-flags',
         'resources/muonroibase-template',
         'resources/base-template-examples',
+        'resources/rule-engine-samples',
         'resources/asvs-checklist',
         'resources/release-checklist',
         'resources/upgrade-guide',

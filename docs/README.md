@@ -15,6 +15,10 @@ Welcome to the official documentation for Muonroi Building Block. This guide is 
 *   [**Permission Tree**](03-guides/identity-access/permission-tree-guide.md) - Syncing permissions to the frontend.
 *   [**External Auth**](03-guides/identity-access/external-auth-guide.md) - Integrating third-party providers.
 *   [**Multi-Tenant Guide**](03-guides/multi-tenancy/multi-tenant-guide.md) - Configuring data isolation and tenant resolution.
+*   [**Multi-Tenant Quota Guide**](03-guides/multi-tenancy/multi-tenant-quota-guide.md) - Cấu hình quota theo tenant/tier.
+*   [**Quota API Reference**](03-guides/multi-tenancy/quota-api-reference.md) - API usage/limits/upgrade tier.
+*   [**Quota Dashboard Mockups**](03-guides/multi-tenancy/quota-dashboard-mockups.md) - Wireframe dashboard giám sát quota.
+*   [**Tenant Quota Migration Guide**](03-guides/multi-tenancy/tenant-quota-migration-guide.md) - Kế hoạch migration tenant cũ.
 
 ## 🛠️ Backend Development
 *   [**Backend Architecture**](03-guides/integration/backend-guide.md) - Best practices for Controllers, Handlers, and Repositories.
@@ -26,6 +30,10 @@ Welcome to the official documentation for Muonroi Building Block. This guide is 
 
 ## 🧠 Rule Engine
 *   [**Rule Engine Guide**](03-guides/rule-engine/rule-engine-guide.md) - Core concepts: `IRule<T>`, Workflows, and Facts.
+*   [**Decision Table Guide**](03-guides/rule-engine/decision-table-guide.md) - Thiết kế, validate, export và execute decision tables.
+*   [**Decision Table API Reference**](03-guides/rule-engine/decision-table-api-reference.md) - Danh sách endpoint CRUD/validate/export.
+*   [**FEEL Reference**](03-guides/rule-engine/feel-reference.md) - Cú pháp FEEL, function, range, context, quantified expressions.
+*   [**FEEL Migration Guide**](03-guides/rule-engine/feel-migration-guide.md) - Nâng cấp từ FEEL v1 lên v2 mở rộng.
 *   [**Rule Engine Upgrade (Tiếng Việt)**](03-guides/rule-engine/rule-engine-upgrade-guide.vi.md) - Hướng dẫn nâng cấp, runtime modes, loại rule, và kịch bản verify.
 *   [**Rule Governance**](03-guides/rule-engine/rule-governance-guide.md) - Versioning, signing, and managing rule sets.
 *   [**Rule Rollout**](03-guides/rule-engine/rule-rollout-guide.md) - Feature flags and gradual rollout strategies.
@@ -42,6 +50,8 @@ Welcome to the official documentation for Muonroi Building Block. This guide is 
 *   [**Performance Guide**](04-operations/performance-guide.md) - Optimization and scaling strategies.
 *   [**Gateway Configuration**](03-guides/integration/gateway-guide.md) - Setting up API Gateways (Ocelot/YARP).
 *   [**Docker & Kubernetes**](04-operations/ci-cd-docker-k8s.md) - Containerization and deployment checklists.
+*   [**Kubernetes Deployment Guide**](04-operations/kubernetes-deployment-guide.md) - Triển khai Helm chart cho Rule Engine.
+*   [**Troubleshooting Guide**](04-operations/troubleshooting-guide.md) - Chẩn đoán sự cố vận hành thường gặp.
 *   [**Secret Management**](04-operations/secret-management.md) - Handling sensitive configuration securely.
 *   [**ASVS Checklist**](06-resources/asvs-checklist.md) - Security compliance verification.
 
@@ -55,6 +65,7 @@ Welcome to the official documentation for Muonroi Building Block. This guide is 
 
 ## 📦 Samples
 *   [**Base Template Examples**](06-resources/base-template-examples.md) - Common patterns in the boilerplate.
+*   [**Rule Engine Samples**](06-resources/rule-engine-samples.md) - Chạy `DecisionTableDemo` và `FeelPlayground`.
 
 ## 🪞 BuildingBlock Mirror
 *   [**Markdown Mirror Index**](06-resources/buildingblock/index.md) - Danh sách các file `*.md` đồng bộ từ `MuonroiBuildingBlock`.

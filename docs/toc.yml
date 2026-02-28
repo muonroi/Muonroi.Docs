@@ -53,6 +53,14 @@
     items:
     - name: Rule Engine
       href: 03-guides/rule-engine/rule-engine-guide.md
+    - name: Decision Table Guide
+      href: 03-guides/rule-engine/decision-table-guide.md
+    - name: Decision Table API Reference
+      href: 03-guides/rule-engine/decision-table-api-reference.md
+    - name: FEEL Reference
+      href: 03-guides/rule-engine/feel-reference.md
+    - name: FEEL Migration Guide
+      href: 03-guides/rule-engine/feel-migration-guide.md
     - name: Rule Engine (Tiếng Việt)
       href: 03-guides/rule-engine/rule-engine-guide.vi.md
     - name: Rule Engine Upgrade (Tiếng Việt)
@@ -86,6 +94,14 @@
       href: 03-guides/multi-tenancy/multi-tenant-guide.vi.md
     - name: Tenant Isolation
       href: 03-guides/multi-tenancy/tenant-isolation.md
+    - name: Multi-Tenant Quota Guide
+      href: 03-guides/multi-tenancy/multi-tenant-quota-guide.md
+    - name: Quota API Reference
+      href: 03-guides/multi-tenancy/quota-api-reference.md
+    - name: Quota Dashboard Mockups
+      href: 03-guides/multi-tenancy/quota-dashboard-mockups.md
+    - name: Tenant Quota Migration Guide
+      href: 03-guides/multi-tenancy/tenant-quota-migration-guide.md
 
   - name: 🔗 Integration
     items:
@@ -141,6 +157,10 @@
     href: 04-operations/dr-tenant-playbook.md
   - name: Azure SQL Elastic Jobs
     href: 04-operations/elastic-jobs.md
+  - name: Kubernetes Deployment Guide
+    href: 04-operations/kubernetes-deployment-guide.md
+  - name: Troubleshooting Guide
+    href: 04-operations/troubleshooting-guide.md
 
 - name: 📖 Reference
   items:
@@ -165,6 +185,8 @@
     href: 06-resources/muonroibase-template.md
   - name: BaseTemplate Examples
     href: 06-resources/base-template-examples.md
+  - name: Rule Engine Samples
+    href: 06-resources/rule-engine-samples.md
   - name: ASVS Checklist
     href: 06-resources/asvs-checklist.md
   - name: Release Checklist
