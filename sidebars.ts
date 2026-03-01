@@ -47,6 +47,7 @@ const sidebars: SidebarsConfig = {
             'guides/rule-engine/rule-engine-guide',
             'guides/rule-engine/decision-table-guide',
             'guides/rule-engine/decision-table-api-reference',
+            'guides/rule-engine/decision-table-upgrade-guide-2026',
             'guides/rule-engine/feel-reference',
             'guides/rule-engine/feel-migration-guide',
             'guides/rule-engine/rule-workflow-adapter-guide',

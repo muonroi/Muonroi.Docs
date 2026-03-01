@@ -57,6 +57,8 @@
       href: 03-guides/rule-engine/decision-table-guide.md
     - name: Decision Table API Reference
       href: 03-guides/rule-engine/decision-table-api-reference.md
+    - name: Decision Table Full Upgrade Guide (2026)
+      href: 03-guides/rule-engine/decision-table-upgrade-guide-2026.md
     - name: FEEL Reference
       href: 03-guides/rule-engine/feel-reference.md
     - name: FEEL Migration Guide

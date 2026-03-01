@@ -69,6 +69,12 @@ muonroi-dt export-dmn --source ./table.json --output ./workflow.dmn.xml
 
 See `MuonroiBuildingBlock/Samples/DecisionTableDemo` for runnable code.
 
+## 7. Full upgrade guide (2026)
+
+For production-grade setup (SQL persistence, bulk API, drag-drop row reorder, audit, versioning, and UI package integration), see:
+
+- [Decision Table Full Upgrade Guide (2026)](decision-table-upgrade-guide-2026.md)
+
 Sample index:
 
 - [Rule Engine Samples](../../06-resources/rule-engine-samples.md)
