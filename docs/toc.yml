@@ -87,6 +87,18 @@
       href: 03-guides/rule-engine/rule-engine-dependencies.md
     - name: Rule Engine Advanced Patterns
       href: 03-guides/rule-engine/rule-engine-advanced-patterns.md
+    - name: RuleGen Upgrade Guide
+      href: 03-guides/rule-engine/rulegen-guide.md
+    - name: RuleGen Phase 1 - Roslyn Foundation
+      href: 03-guides/rule-engine/rulegen-phase1-roslyn-foundation.md
+    - name: RuleGen Phase 2 - Multi-File, DI, Validation
+      href: 03-guides/rule-engine/rulegen-phase2-multifile-di-validation.md
+    - name: RuleGen Phase 3 - Config, Watch, Test Scaffold
+      href: 03-guides/rule-engine/rulegen-phase3-config-watch-tests.md
+    - name: RuleGen Phase 4 - Merge/Split Runtime Workflow
+      href: 03-guides/rule-engine/rulegen-phase4-merge-split-runtime.md
+    - name: RuleGen Phase 5 - Enterprise Hardening
+      href: 03-guides/rule-engine/rulegen-phase5-enterprise-hardening.md
     - name: NRules Integration
       href: 03-guides/rule-engine/nrules-integration.md
     - name: Workflow JSON Format

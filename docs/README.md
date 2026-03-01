@@ -44,6 +44,12 @@ Welcome to the official documentation for Muonroi Building Block. This guide is 
 *   [**Configuration Reference**](03-guides/rule-engine/rule-engine-configuration-reference.md) - Runtime/store configuration options.
 *   [**Dependencies Guide**](03-guides/rule-engine/rule-engine-dependencies.md) - Dependency ordering and cycle prevention.
 *   [**Advanced Patterns**](03-guides/rule-engine/rule-engine-advanced-patterns.md) - Hybrid/shadow rollout and code-first extraction.
+*   [**RuleGen Upgrade Guide**](03-guides/rule-engine/rulegen-guide.md) - Unified roadmap và triển khai đầy đủ RuleGen.
+*   [**RuleGen Phase 1**](03-guides/rule-engine/rulegen-phase1-roslyn-foundation.md) - Roslyn foundation và method body extraction.
+*   [**RuleGen Phase 2**](03-guides/rule-engine/rulegen-phase2-multifile-di-validation.md) - Multi-file/project + DI + validation.
+*   [**RuleGen Phase 3**](03-guides/rule-engine/rulegen-phase3-config-watch-tests.md) - Config, watch mode và test scaffold.
+*   [**RuleGen Phase 4**](03-guides/rule-engine/rulegen-phase4-merge-split-runtime.md) - Merge/split runtime workflow.
+*   [**RuleGen Phase 5**](03-guides/rule-engine/rulegen-phase5-enterprise-hardening.md) - Enterprise hardening cho CI/CD.
 *   [**Workflow Adapter Guide**](03-guides/rule-engine/rule-workflow-adapter-guide.md) - BPMN-like orchestration with rule tasks, service tasks, and gateways.
 *   [**NRules Integration**](03-guides/rule-engine/nrules-integration.md) - Advanced rule patterns using NRules.
 

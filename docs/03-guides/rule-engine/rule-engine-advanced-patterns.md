@@ -25,3 +25,8 @@ When using external JSON rulesets:
 2. Generate rule classes using `muonroi-rule extract`.
 3. Generate DI registration using `muonroi-rule register`.
 4. Verify generated artifacts using `muonroi-rule verify`.
+
+See full upgrade details:
+- `rulegen-guide.md`
+- `rulegen-phase1-roslyn-foundation.md`
+- `rulegen-phase4-merge-split-runtime.md`
