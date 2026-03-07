@@ -8,6 +8,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'getting-started/introduction',
         'getting-started/quickstart',
+        'getting-started/first-rule',
         'getting-started/quickstart-decision-table',
         'getting-started/template-quickstart',
       ],
@@ -147,6 +148,7 @@ const sidebars: SidebarsConfig = {
         'resources/feature-flags',
         'resources/test-matrix-guide',
         'resources/release-checklist',
+        'resources/ui-engine-registry-migration',
         'resources/CHANGELOG',
         'resources/CONTRIBUTING',
         'resources/SECURITY',

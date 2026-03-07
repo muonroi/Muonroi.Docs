@@ -60,6 +60,7 @@ After startup, the current rule-focused endpoints are:
 
 - `POST /api/v1/feel/evaluate`
 - `POST /api/v1/feel/autocomplete`
+- `POST /api/v1/decision-tables/feel-autocomplete`
 - `GET /api/v1/feel/examples`
 - `/api/v1/decision-tables/*`
 - `/api/v1/control-plane/*` in the control-plane service
@@ -76,3 +77,5 @@ After startup, the current rule-focused endpoints are:
 - [Decision Table Quickstart](./quickstart-decision-table.md)
 - [Rule Engine Guide](../03-guides/rule-engine/rule-engine-guide.md)
 - [Appsettings Guide](../05-reference/appsettings-guide.md)
+- [LoanApproval sample](../06-resources/samples/loan-approval.md)
+- [MultiTenantSaaS sample](../06-resources/samples/multi-tenant-saas.md)

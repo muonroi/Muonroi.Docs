@@ -2,43 +2,49 @@
 
 Use local templates and local package feeds when verifying Muonroi changes.
 
-## 1. Pack to the local feed
+## 1. Detect workspace root
 
 ```powershell
-cd D:\sources\Core\Muonroi.BaseTemplate
-dotnet pack .\Muonroi.BaseTemplate.csproj -c Release -o D:\sources\Core\LocalNuget
+$workspace = Split-Path (git rev-parse --show-toplevel) -Parent
 ```
 
-Repeat for:
-
-- `Muonroi.Modular.Template`
-- `Muonroi.Microservices.Template`
-
-## 2. Install the local packages
+## 2. Pack templates to local feed
 
 ```powershell
-dotnet new install D:\sources\Core\LocalNuget\Muonroi.BaseTemplate.<version>.nupkg --force
+dotnet pack "$workspace\Muonroi.BaseTemplate\Muonroi.BaseTemplate.csproj" -c Release -o "$workspace\LocalNuget"
+dotnet pack "$workspace\Muonroi.Modular.Template\Muonroi.Modular.csproj" -c Release -o "$workspace\LocalNuget"
+dotnet pack "$workspace\Muonroi.Microservices.Template\Muonroi.Microservices.csproj" -c Release -o "$workspace\LocalNuget"
 ```
 
-## 3. Generate a solution
+## 3. Install local template package
 
 ```powershell
-dotnet new muonroibase -n DemoService
+dotnet new install "$workspace\LocalNuget\Muonroi.BaseTemplate.<version>.nupkg" --force
 ```
 
-## 4. Verify the generated project
+## 4. Generate a solution by tier
 
 ```powershell
-cd .\DemoService
-.\scripts\ef.cmd init
-.\scripts\ef.cmd update
+# OSS
+dotnet new mr-base-sln -n DemoOss --tier oss
+
+# Licensed (generates NuGet.config with commercial feed template)
+dotnet new mr-base-sln -n DemoLicensed --tier licensed
+
+# Enterprise + control plane URL override
+dotnet new mr-base-sln -n DemoEnterprise --tier enterprise --cpu https://cp.myorg.com
+```
+
+## 5. Verify generated output
+
+```powershell
+cd .\DemoEnterprise
 dotnet restore
 dotnet run
 ```
 
-## 5. Validation expectation
+## 6. Validation expectation
 
-- `dotnet test` stays green.
-- Generated app can run EF setup scripts.
-- Authentication flow returns `result.accessToken`.
-- If license mode is enabled, logs contain `[License] Verified tier: ...`.
+- `--tier oss` output has no generated `NuGet.config`.
+- `--tier licensed` output includes `Muonroi.Governance.Enterprise` and `Muonroi.Caching.Redis`.
+- `--tier enterprise --cpu <url>` outputs `ControlPlane.Url = <url>` in appsettings.
