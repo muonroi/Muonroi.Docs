@@ -14,6 +14,7 @@ Representative OSS packages:
 - `Muonroi.RuleEngine.DecisionTable`
 - `Muonroi.RuleEngine.NRules`
 - `Muonroi.Observability`
+- `Muonroi.Messaging.Abstractions` — contracts: `IMuonroiMessageEnvelope`, `IOutboxRelayService`, `IMessageRoutingRule<T>`, `IMuonroiSaga`, `EventOutbox`, `IntegrationEvent`, `DomainEvent`
 
 Representative commercial packages:
 
@@ -23,6 +24,7 @@ Representative commercial packages:
 - `Muonroi.SignalR`
 - `Muonroi.Grpc`
 - `Muonroi.Bff`
+- `Muonroi.Messaging.MassTransit` — MassTransit integration: automatic context propagation, outbox relay, quota enforcement, rule-based routing, saga persistence base, OTel pipeline
 
 ## npm packages
 

@@ -107,6 +107,7 @@ const sidebars: SidebarsConfig = {
             'guides/integration/gateway-guide',
             'guides/integration/grpc-guide',
             'guides/integration/signalr-guide',
+            'guides/integration/messaging-guide',
           ],
         },
         'guides/ecosystem-coding-rules',
