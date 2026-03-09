@@ -2,11 +2,12 @@
 
 This page tracks sample scenarios that reflect the current platform, not old migration sandboxes.
 
-## Recommended sample scenarios
+## Community quickstart projects
 
-- loan approval decision table
-- tenant-tier quota enforcement
-- approval workflow with canary promotion
-- FEEL playground for business-authored expressions
+- [Quickstart Rule Engine](./samples/quickstart-rule-engine.md): minimal API with one rule and orchestrator facts.
+- [Quickstart Decision Table](./samples/quickstart-decision-table.md): minimal decision-table host wired to Postgres.
 
-See the dedicated sample writeups in [`samples/`](./samples/loan-approval.md).
+## End-to-end samples
+
+- [Loan Approval](./samples/loan-approval.md): rule workflow + decision table artifacts.
+- [Multi Tenant SaaS](./samples/multi-tenant-saas.md): tenant-specific rule wiring and optional control-plane hooks.

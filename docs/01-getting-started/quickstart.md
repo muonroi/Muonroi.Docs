@@ -77,5 +77,7 @@ After startup, the current rule-focused endpoints are:
 - [Decision Table Quickstart](./quickstart-decision-table.md)
 - [Rule Engine Guide](../03-guides/rule-engine/rule-engine-guide.md)
 - [Appsettings Guide](../05-reference/appsettings-guide.md)
+- [Quickstart Rule Engine Sample](../06-resources/samples/quickstart-rule-engine.md)
+- [Quickstart Decision Table Sample](../06-resources/samples/quickstart-decision-table.md)
 - [LoanApproval sample](../06-resources/samples/loan-approval.md)
 - [MultiTenantSaaS sample](../06-resources/samples/multi-tenant-saas.md)

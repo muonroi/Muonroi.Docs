@@ -189,3 +189,7 @@
     href: 06-resources/samples/loan-approval.md
   - name: Multi Tenant SaaS Sample
     href: 06-resources/samples/multi-tenant-saas.md
+  - name: Quickstart Rule Engine Sample
+    href: 06-resources/samples/quickstart-rule-engine.md
+  - name: Quickstart Decision Table Sample
+    href: 06-resources/samples/quickstart-decision-table.md

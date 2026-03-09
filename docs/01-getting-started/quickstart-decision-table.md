@@ -40,3 +40,7 @@ Send `POST /api/v1/decision-tables` with a `DecisionTableModel` payload that con
 ## 5. Add FEEL assistance
 
 The UI widgets call `/api/v1/feel/autocomplete` while authors edit cells, so expose `AddFeelWeb()` in the same host.
+
+## 6. Community sample
+
+- [Quickstart Decision Table Sample](../06-resources/samples/quickstart-decision-table.md)
