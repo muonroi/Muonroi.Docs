@@ -8,6 +8,16 @@ Decision table versions are snapshot-based. Each save stores a full table payloa
 - `GET /api/v1/decision-tables/{id}/versions/{version}`
 - `GET /api/v1/decision-tables/{id}/versions/{v1}/diff/{v2}`
 
+## MCP tools
+
+The control-plane MCP server exposes the same versioning workflow to AI agents:
+
+- `muonroi_decision_table_get_versions`
+- `muonroi_decision_table_get_version`
+- `muonroi_decision_table_diff_versions`
+
+Tenant scoping still applies. A tool call only returns versions that belong to the current execution context tenant.
+
 ## Diff payload
 
 `DecisionTableDiff` includes:

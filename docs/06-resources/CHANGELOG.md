@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.9.5] - 2026-03-11
+
+### Added
+- Developer MCP guide for Muonroi local authoring workflows:
+  - `muonroi-mcp-dev` stdio server
+  - mandatory AI workflow for `muonroi://ecosystem/rules`, scaffolding, compliance, extract, and register
+  - Claude Code `.claude/mcp.json` example for local server registration
+- Control-plane MCP decision table version tools:
+  - `muonroi_decision_table_get_versions`
+  - `muonroi_decision_table_get_version`
+  - `muonroi_decision_table_diff_versions`
+- Rule Studio deep runtime extensions:
+  - `GET /api/v1/rule-catalog` and `GET /api/v1/rule-catalog/{code}` for BA palette metadata
+  - `MRuleCatalogEntry` metadata now flows from authoring manifest into the Control Plane palette
+  - `mu-rule-flow-designer` accepts `catalogApiBase` and renders remote rule palette groups
+  - designer dependency overlay and auto-layout actions for graph readability
+  - dependency badge click-to-focus navigation inside the inspector
+  - decision-table inspector schema overview with column and hit-policy hints
+  - explicit publish confirmation dialog before save/submit/activate begins
+
+### Changed
+- Rule engine documentation now treats MCP as a first-class developer entry point alongside `muonroi-rule` and `Muonroi.DecisionTableGen`.
+- Control-plane MCP decision table coverage now includes version history, version snapshot lookup, and structural diff for tenant-scoped tables.
+- Claude Code MCP registration guidance now includes paired `muonroi-cloud` + `muonroi-dev` setup and repo-local `.claude/mcp.json` files for `muonroi-building-block`, `muonroi-control-plane`, and `muonroi-ui-engine`.
+- Rule Studio host integration now uses split endpoints:
+  - `apiBaseUrl=/api/v1/control-plane`
+  - `catalogApiBase=/api/v1/rule-catalog`
+- Rule Studio remote catalog palette now renders as a dedicated searchable section with loading and empty states in `mu-rule-flow-designer`.
+- Flow-graph runtime now treats `always` edges as non-halting branch continuations after upstream failures or exceptions, matching `on-false` / `on-error` recovery semantics.
+
 ## [1.9.4] - 2026-03-07
 
 ### Added

@@ -6,6 +6,8 @@
     href: 01-getting-started/introduction.md
   - name: Quickstart
     href: 01-getting-started/quickstart.md
+  - name: First Rule
+    href: 01-getting-started/first-rule.md
   - name: Decision Table Quickstart
     href: 01-getting-started/quickstart-decision-table.md
   - name: Template Quickstart
@@ -28,6 +30,8 @@
     items:
     - name: Rule Engine Guide
       href: 03-guides/rule-engine/rule-engine-guide.md
+    - name: CEP Engine Guide
+      href: 03-guides/rule-engine/cep-engine.md
     - name: FEEL Reference
       href: 03-guides/rule-engine/feel-reference.md
     - name: Decision Table Guide
@@ -42,6 +46,10 @@
       href: 03-guides/rule-engine/auto-crud-rules.md
     - name: RuleGen Guide
       href: 03-guides/rule-engine/rulegen-guide.md
+    - name: MCP Developer Server
+      href: 03-guides/rule-engine/mcp-developer-server.md
+    - name: Rule Source Generator Deep Dive
+      href: 03-guides/rule-engine/rule-source-generator.md
     - name: RuleGen VS Code Extension
       href: 03-guides/rule-engine/rulegen-vscode-extension.md
     - name: Rule Engine Testing Guide
@@ -88,6 +96,10 @@
       href: 03-guides/ui-engine/decision-table-widget.md
     - name: FEEL Autocomplete Widget
       href: 03-guides/ui-engine/feel-autocomplete-widget.md
+    - name: Rule Studio Authoring
+      href: 03-guides/rule-studio-authoring.md
+    - name: Rule Flow Designer
+      href: 03-guides/ui-engine/rule-flow-designer.md
   - name: Identity and Access
     items:
     - name: External Auth Integration
@@ -124,6 +136,8 @@
       href: 03-guides/integration/grpc-guide.md
     - name: SignalR Guide
       href: 03-guides/integration/signalr-guide.md
+    - name: Messaging Guide
+      href: 03-guides/integration/messaging-guide.md
   - name: Ecosystem Coding Rules
     href: 03-guides/ecosystem-coding-rules.md
 
@@ -131,6 +145,8 @@
   items:
   - name: Background Jobs Guide
     href: 04-operations/background-jobs-guide.md
+  - name: Control Plane Operator Guide
+    href: 04-operations/control-plane-operator.md
   - name: Kubernetes Deployment Guide
     href: 04-operations/kubernetes-deployment-guide.md
   - name: CI CD Docker and K8s
@@ -147,6 +163,10 @@
     href: 04-operations/ruleset-governance-ops.md
   - name: Dry Run Operations
     href: 04-operations/dry-run.md
+  - name: License Server Admin Guide
+    href: 04-operations/license-server-admin.md
+  - name: License Reactivation
+    href: 04-operations/license-reactivation.md
   - name: Troubleshooting Guide
     href: 04-operations/troubleshooting-guide.md
 
@@ -175,6 +195,8 @@
     href: 06-resources/test-matrix-guide.md
   - name: Release Checklist
     href: 06-resources/release-checklist.md
+  - name: UI Engine Registry Migration
+    href: 06-resources/ui-engine-registry-migration.md
   - name: CHANGELOG
     href: 06-resources/CHANGELOG.md
   - name: CONTRIBUTING
