@@ -28,6 +28,27 @@ The target service endpoints are typically stored in `GrpcServicesConfig`:
 }
 ```
 
+Client forwarding defaults can also be configured centrally:
+
+```json
+{
+  "GrpcServicesConfig": {
+    "ClientDefaults": {
+      "ForwardAuthToken": true,
+      "ForwardTenantId": true
+    },
+    "Services": {
+      "SampleService": {
+        "Uri": "https://localhost:5001",
+        "ForwardAuthToken": true
+      }
+    }
+  }
+}
+```
+
+`ForwardAuthToken` uses the current `ISystemExecutionContext.AccessToken`. `ForwardTenantId` uses `ISystemExecutionContext.TenantId`. Per-service values override the defaults.
+
 ## Wrap client calls
 
 You can inherit from `BaseGrpcService` so outbound calls automatically carry common metadata such as correlation and tenant context.
@@ -76,3 +97,13 @@ public class AggregatorService(GrpcClientFactory factory, MAuthenticateInfoConte
 ```
 
 Use wrappers for repeated call patterns, retries, metadata propagation, and shared error handling. Use direct factory access only when a dedicated wrapper adds no value.
+
+## Forwarded metadata
+
+Track 8 adds `GrpcClientAuthInterceptor`, which appends outbound metadata from the current execution context when enabled:
+
+- `authorization: Bearer <token>` when `ForwardAuthToken = true`
+- `x-tenant-id` when `ForwardTenantId = true`
+- `x-correlation-id` whenever a correlation id is present
+
+Existing client metadata is preserved. The interceptor will not overwrite a header that the caller already supplied explicitly.

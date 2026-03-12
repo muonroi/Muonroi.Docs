@@ -76,7 +76,8 @@ builder.Services.AddOutboxRelay();
     },
     "MaskAccessTokenInHeaders": false,
     "EnableQuotaEnforcement": false,
-    "EnableRuleEngineRouting": false
+    "EnableRuleEngineRouting": true,
+    "EnableRedisRoutingTable": true
   }
 }
 ```
@@ -96,7 +97,7 @@ Every message flows through a fixed pipeline registered globally by `AddMessageB
 ```
 AmqpContextConsumeFilter       → Extracts headers → ISystemExecutionContext
 TenantContextConsumeFilter     → Validates tenant policy
-RuleEngineRoutingFilter        → Runs IMessageRoutingRule<T> (if EnableRuleEngineRouting)
+RuleEngineRoutingFilter        → Runs IMessageRouter<T> + Redis FEEL routes (if EnableRuleEngineRouting)
 EcsConsumeLoggingFilter        → OTel trace + metrics + IMLogContext scopes
 ↓ Consumer.HandleAsync
 ```
@@ -261,37 +262,93 @@ builder.Services.AddTenantQuotaManagement();
 
 ## 9. Rule Engine Routing
 
-Enable `EnableRuleEngineRouting: true` to run registered `IMessageRoutingRule<T>` implementations against each incoming message before it reaches your consumer.
+Enable `EnableRuleEngineRouting: true` to evaluate explicit routing decisions before the message reaches your consumer.
+
+### DI-based routing
 
 ```csharp
-// Define a routing rule
-public class OrderValidationRule : IMessageRoutingRule<OrderCreated>
+public sealed class OrderCreatedRouter : IMessageRouter<OrderCreated>
 {
-    public string Code => "order.validation";
     public int Order => 0;
+    public string Code => "order.route";
 
-    public Task ExecuteAsync(OrderCreated ctx, CancellationToken ct)
+    public Task<IRoutingDecision> RouteAsync(
+        OrderCreated message,
+        IRoutingContext context,
+        CancellationToken ct = default)
     {
-        if (ctx.Amount <= 0)
-            throw new InvalidOperationException("Order amount must be positive.");
-        return Task.CompletedTask;
+        if (context.TenantId == "acme")
+        {
+            return Task.FromResult(RoutingDecision.RedirectTo(
+                "rabbitmq://localhost/acme-orders",
+                "Tenant-specific routing"));
+        }
+
+        return Task.FromResult(RoutingDecision.PassThrough);
     }
 }
 
-// Register
-builder.Services.AddScoped<IMessageRoutingRule<OrderCreated>, OrderValidationRule>();
-
-// appsettings
-"MessageBusConfigs": {
-  "EnableRuleEngineRouting": true
-}
+builder.Services.AddMessageRouter<OrderCreated, OrderCreatedRouter>();
 ```
 
-Rules are executed in `Order` ascending. Throwing from `ExecuteAsync` stops the message from reaching the consumer; MassTransit routes it to the error queue per the configured retry policy.
+### Redis-backed dynamic routing
+
+Enable `EnableRedisRoutingTable: true` to merge DI routers with routes stored in `IRedisRoutingTableStore`. Each route entry contains:
+- `MessageType`
+- `TenantId`
+- `RuleCode`
+- `Order`
+- `TargetAddress`
+- `FeelExpression`
+- `IsActive`
+
+When `FeelExpression` is present, it is compiled once and reused on later evaluations. Matching routes redirect the message and preserve Muonroi context headers on the outgoing send operation.
+
+### Backward compatibility and rejects
+
+Legacy `IMessageRoutingRule<T>` registrations still work and preserve the old fail-fast behavior. Use `RoutingDecision.DeadLetter("reason")` when a router should intentionally fault and stop the consume pipeline.
 
 ---
 
-## 10. Saga Support — `MSagaDbContext`
+## 10. Rule-Triggered Notifications
+
+`MRuleEngineBehavior<TRequest, TResponse>` can now publish mediator notifications automatically after a rule passes and executes.
+
+### Attribute-based notification emit
+
+```csharp
+[MEmitOnPass(typeof(FraudDetectedNotification))]
+public sealed class FraudCheckRule : IRule<OrderContext>
+{
+    public string Code => "fraud.check";
+    public HookPoint HookPoint => HookPoint.BeforeRule;
+    public int Order => 0;
+
+    public Task<RuleResult> EvaluateAsync(OrderContext ctx, FactBag facts, CancellationToken ct)
+        => Task.FromResult(RuleResult.Passed());
+
+    public Task ExecuteAsync(OrderContext context, CancellationToken cancellationToken = default)
+        => Task.CompletedTask;
+}
+```
+
+### Context-aware notification payloads
+
+When the notification requires runtime values from the rule context, implement `IRuleNotificationFactory<TContext>`:
+
+```csharp
+public sealed class FraudCheckRule : IRule<OrderContext>, IRuleNotificationFactory<OrderContext>
+{
+    public INotification BuildNotification(OrderContext context)
+        => new FraudDetectedNotification(context.OrderId, context.TenantId);
+}
+```
+
+Notification publish failures are logged, but they do not abort the main request flow.
+
+---
+
+## 11. Saga Support — `MSagaDbContext`
 
 For long-running workflows, extend `MSagaDbContext` to get tenant-aware saga state persistence:
 
@@ -328,7 +385,7 @@ public class OrderSagaState : IMuonroiSaga
 
 ---
 
-## 11. Observability
+## 12. Observability
 
 `AddMessageBus` registers OpenTelemetry sources automatically:
 
@@ -360,7 +417,7 @@ All metrics are tagged with `tenant.id` for per-tenant dashboards.
 
 ---
 
-## 12. Health Checks
+## 13. Health Checks
 
 `AddMessageBus` registers a health check named `rabbitmq` or `kafka` depending on `BusType`. Expose it via the standard endpoint:
 
@@ -370,7 +427,7 @@ app.MapHealthChecks("/health");
 
 ---
 
-## 13. Transport Notes
+## 14. Transport Notes
 
 ### RabbitMQ
 

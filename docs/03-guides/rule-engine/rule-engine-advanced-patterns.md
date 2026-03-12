@@ -28,6 +28,12 @@ Enable `RuleControlPlaneOptions.EnableCanary` and roll out by tenant while prese
 
 Pair `AddMRuleEngineWithPostgres(...)` with `AddMRuleEngineWithRedisHotReload(...)` to publish ruleset change events across nodes.
 
+## Rule-triggered mediator notifications
+
+Use `[MEmitOnPass(...)]` on `IRule<TContext>` implementations when a successful rule evaluation should emit an in-process mediator notification without adding publish boilerplate to the handler.
+
+Implement `IRuleNotificationFactory<TContext>` when the emitted notification payload depends on runtime context values.
+
 ## Decision table authoring loop
 
 Use the widget-backed editor for business authoring, then export JSON or DMN when a downstream system needs a portable artifact.

@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.9.6] - 2026-03-12
+
+### Added
+- Track 8 messaging and integration runtime coverage:
+  - `IMessageRouter<TMessage>` and `IRoutingDecision` for redirect / dead-letter decisions
+  - Redis-backed routing table with local cache + pub/sub invalidation
+  - `GrpcClientAuthInterceptor` for forwarding bearer token, tenant id, and correlation id from `ISystemExecutionContext`
+  - mediator-side `[MEmitOnPass]` and `IRuleNotificationFactory<TContext>` for rule-triggered notifications
+  - structured rule execution telemetry with pass/fail result counters and duration histogram tags
+
+### Changed
+- `RuleEngineRoutingFilter<T>` now supports three routing sources in order:
+  - Redis dynamic routes
+  - DI-registered `IMessageRouter<T>`
+  - legacy `IMessageRoutingRule<T>` compatibility adapter
+- Messaging documentation now covers Redis FEEL routing, reject semantics, and rule-triggered mediator notifications.
+- gRPC documentation now covers per-client `ForwardAuthToken` / `ForwardTenantId` configuration and outbound metadata forwarding behavior.
+
 ## [1.9.5] - 2026-03-11
 
 ### Added
